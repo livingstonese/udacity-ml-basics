@@ -13471,17 +13471,17 @@ div#notebook {
 <p><strong>Answer:</strong></p>
 <p><strong>Index 23</strong></p>
 <ul>
-<li>Spending is high in almost all categories. Also their spending in delicateseen is very high</li>
+<li>Spending is high in almost all categories. Also their spending in delicateseen is very high when compared to the category mean of 1524. The category spendings are high because it could be some sort of reseller.</li>
 <li>Conclusion - Supermarket with a special counter that sells different types of cold cooked meat, cheese, etc.</li>
 </ul>
 <p><strong>Index 154</strong></p>
 <ul>
-<li>The spending in most of the categories is way below the average.</li>
+<li>The spending in most of the categories is way below the average as seen in the describe function earlier.</li>
 <li>Conclusion - This could be a local kirana shop that sells daily consumables</li>
 </ul>
 <p><strong>Index 181</strong></p>
 <ul>
-<li>The spending is considerably higher in Fresh category. This could suggest that this is a market where fresh produce is sold is procured from farmers and distributed to local resellers</li>
+<li>The spending is considerably higher in Fresh category when compared to the category average of 12000. This could suggest that this is a market where fresh produce is sold is procured from farmers and distributed to local resellers</li>
 <li>Conclusion - This could be something like Madiwala whole sale vegetable market from all local vegetable shops procure fresh produce.</li>
 </ul>
 
@@ -15105,26 +15105,25 @@ http://pandas.pydata.org/pandas-docs/stable/indexing.html#ix-indexer-is-deprecat
 <li>First 2 principal components - 0.7068</li>
 <li>First 4 principal components - 0.9311</li>
 <li>Dimension 1:<ul>
-<li>This dimension represents Milk, Grocery and Detergents paper predominantly.</li>
+<li>A data point with a high value in dimension 1 will be relatively low in Milk, Grocery and Detergents Paper.</li>
 <li>The variance that this dimension contributes to is 0.4430</li>
-<li>The 3 features Milk, Grocery and Detergents paper contribute to almost half the variance in the data.\</li>
-<li>A positive increase in this dimension would contribute to a corresponding decrease in Milk, Grocery and Detergents paper</li>
+<li>The 3 features Milk, Grocery and Detergents paper contribute to almost half the variance in the data.</li>
 </ul>
 </li>
 <li>Dimension 2:<ul>
 <li>This dimension represent Fresh, Frozen and Delis predominantly</li>
-<li>This dimension also inversely depends on these 3 and hence an increase in this dimension would reflect as a decrease in the three features.</li>
-<li>The variance it explains is 0.2638</li>
+<li>A data point with high value in dimension 2 will be relatively low in Fresh, Frozen and Delis.</li>
+<li>The variance it explains is 0.2638. Cumulative Variance = 0.7068</li>
 </ul>
 </li>
 <li>Dimension 3:<ul>
-<li>This dimension is similar to dimension 2. But Frozen and Delis depend linearly on the dimension instead.</li>
-<li>The variance it explains is 0.1231</li>
+<li>This dimension is similar to dimension 2. But Frozen and Delis depend linearly on the dimension instead. Hence an increase in this dimension will see an increase in spending of Frozen and Delis category</li>
+<li>The variance it explains is 0.1231. Cumulative Variance = 0.8299</li>
 </ul>
 </li>
 <li>Dimension 4:<ul>
-<li>This dimension depends linearly on Frozen and inversely on Delis</li>
-<li>The variance it explains is 0.1012</li>
+<li>This dimension depends linearly on Frozen and inversely on Delis. Hence an increase in this dimension will result in an increase in spending in Frozen category. Also an increase of spending in this category will result in a lower spending in Delis category.</li>
+<li>The variance it explains is 0.1012. Cumulative Variance = 0.9311</li>
 </ul>
 </li>
 </ul>
